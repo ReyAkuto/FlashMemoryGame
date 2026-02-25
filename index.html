@@ -813,7 +813,7 @@ function handleGameUpdate(data){
     $lbl.textContent='⌨️ Ketik angkanya!'; $lbl.className='status-lbl sl-answer';
     $bar.style.width='100%';
     if(!hasAnswered){ $ain.disabled=false; $abtn.disabled=false; $ain.focus(); }
-    const st=data.timerStart; const dur=5000;
+    const st=data.timerStart; const dur=8500;
     timerInterval=setInterval(()=>{
       const rem=Math.max(0,dur-(Date.now()-st));
       const pct=(rem/dur)*100;
