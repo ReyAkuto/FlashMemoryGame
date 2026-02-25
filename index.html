@@ -688,7 +688,7 @@ async function hostNextRound(){
         gameState:'ANSWER_PHASE',
         timerStart:firebase.database.ServerValue.TIMESTAMP
       });
-      hostTimerTO=setTimeout(()=>hostCheckAnswers(), 5000);
+      hostTimerTO=setTimeout(()=>hostCheckAnswers(), 8500);
     }, 250);
   }, dur);
 }
@@ -739,7 +739,7 @@ async function checkTie(data){
           gameState:'ANSWER_PHASE',
           timerStart:firebase.database.ServerValue.TIMESTAMP
         });
-        hostTimerTO=setTimeout(()=>hostCheckAnswers(), 5000);
+        hostTimerTO=setTimeout(()=>hostCheckAnswers(), 8500);
       }, 250);
     }, dur);
   } else {
